@@ -12,7 +12,7 @@ Historical monuments suffer constant degradation due to weathering and human act
 ### ⚙️ The Pipeline
 The system operates on a four-stage pipeline, moving from raw internet data to an immersive mobile experience.
 
-![Pipeline Diagram](docs/images/high_level_pipeline.png)
+![Pipeline Diagram](assets/HighLevelPipeline.png) <br>
 *Fig 1: High-level process flow from image collection to AR visualization.*
 
 1.  **Automated Collection:** We built a scraping module that gathers images of specific heritage sites (e.g., Hampi Chariot) and filters them using semantic validation (CLIP) to remove noise and duplicates.
@@ -46,7 +46,7 @@ The implementation focuses on modularity. Each stage of the pipeline functions i
 
 We utilize **local processing** for the reconstruction to ensure data privacy and handle computationally heavy tasks like dense point cloud generation. The final AR deployment is optimized for mobile, utilizing **device-side databases** for target recognition to eliminate latency and dependency on internet connectivity during the site visit.
 
-![System Architecture](docs/images/system_architecture.png)
+![System Architecture](assets/systemArch.png)
 
 ---
 
@@ -56,17 +56,9 @@ We utilize **local processing** for the reconstruction to ensure data privacy an
 Below is a comparison of the input image, the enhanced wireframe extraction, and the final 3D geometry.
 
 ![Reconstruction Results](docs/images/reconstruction_comparison.png)
-*(Left: Original Image | Center: Enhanced Wireframe | Right: Reconstructed Mesh)*
+
 
 **AR Demo**
 See the system in action tracking the Hampi Chariot model over a physical target.
+![Reconstruction Results](assets/full_reconstruction.jpeg)
 
-![AR Demo GIF](docs/images/ar_demo.gif)
-*(Above: A GIF of the AR system in action. If you have a full video, link it below)*
-
-[Watch the full video on YouTube](LINK_TO_YOUR_VIDEO)
-
-
----
-
-*Submitted as a Capstone Project at MIT World Peace University, Pune (2025-2026).*
