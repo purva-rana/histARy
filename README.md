@@ -55,7 +55,7 @@ We utilize **local processing** for the reconstruction to ensure data privacy an
 **Reconstruction Output**
 Below is a comparison of the input image, the enhanced wireframe extraction, and the final 3D geometry.
 
-![Reconstruction Results](docs/images/reconstruction_comparison.png)
+![Reconstruction Results](assets/reconstruction.png)
 
 
 **AR Demo**
